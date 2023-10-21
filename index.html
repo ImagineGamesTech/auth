@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup Example</title>
+    <style>
+        /* Styles for the popup */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="showPopup()">Show Popup</button>
+
+<div id="popup">
+    <h2>Popup Content</h2>
+    <p>This is a simple popup example.</p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script>
+    // JavaScript functions to show and close the popup
+    function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+
+⬤
